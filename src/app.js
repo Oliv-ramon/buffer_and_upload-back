@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import multer from "multer";
 
-const upload = multer();
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 app.use(cors());
